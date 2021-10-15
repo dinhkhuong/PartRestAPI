@@ -12,7 +12,7 @@ public class Part {
     @Column(name = "id") //This is mapping the primary key to the id column in the table.
     private int id;
 
-    @Column(name = "name") //This will map the name field to the column named job_title in the table.
+    @Column(name = "name") //This will map the name field to the column named name in the table.
     private String name;
 
 
@@ -35,7 +35,9 @@ public class Part {
         this.id = id;
     }
 
-
+    public String getName() {
+        return name;
+    }
 
     //ToString Method
     @Override
