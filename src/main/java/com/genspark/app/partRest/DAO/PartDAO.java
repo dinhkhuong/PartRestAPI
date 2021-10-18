@@ -9,6 +9,4 @@ public interface PartDAO {
     Object findById(int partId);
     void saveOrUpdate(Part thePart);
     void deleteById(int partId);
-
-
 }

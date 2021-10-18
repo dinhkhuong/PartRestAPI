@@ -9,7 +9,6 @@ import java.util.List;
 
 @Service
 public class PartServiceIMPL implements PartService {
-
     // Injecting the part dao layer
     private final PartDAO partDAO;
 
@@ -27,6 +26,7 @@ public class PartServiceIMPL implements PartService {
     public Object findById(int partId) {
         return partDAO.findById(partId);
     }
+
 
     @Override
     public void saveOrUpdate(Part thePart) {
