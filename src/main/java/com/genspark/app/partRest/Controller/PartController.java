@@ -25,6 +25,14 @@ public class PartController {
         return partService.findAll();
     }
 
+
+    ////This is a GET request that will read a single part
+    ////http://localhost:8080/retrievePart/{id}
+    @GetMapping("/retrievePart/{id}")
+    public Part find(@PathVariable int id) {
+        return (Part) partService.findById(id);
+    }
+
     //This is a POST request to add a new part.
     //http://localhost:8080/addPart
     @PostMapping("/addPart")
